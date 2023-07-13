@@ -1,0 +1,487 @@
+#main-container {
+  display: flex; }
+
+.container {
+  padding: 0 1rem;
+  margin: 0; }
+
+.log-container {
+  width: 100%;
+  padding: 0 0.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+ul {
+  list-style: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background: #fff;
+  color: #1c1e21;
+  padding: 5 10px;
+  margin: 5 5px;
+  line-height: 1.34rem;
+  font-size: 0.8rem; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+li {
+  list-style: none; }
+
+.s-heading {
+  font-size: 1rem; }
+
+.bg-likes {
+  text-decoration: none;
+  color: #737373; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 18%;
+  margin: 0 5px;
+  padding-right: 1px;
+  border-right: 1px solid #CCCCCC; }
+  #header .navbar {
+    margin: 0 10px;
+    padding: 0 5px; }
+    #header .navbar h1 {
+      font-family: 'Satisfy', cursive;
+      margin-left: 10px;
+      font-size: 1.6rem;
+      margin-top: 50px;
+      margin-bottom: -10px; }
+    #header .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -20px;
+      margin-top: 40px; }
+      #header .navbar ul li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px 0;
+        font-size: 1rem; }
+        #header .navbar ul li a {
+          text-decoration: none;
+          color: #333; }
+        #header .navbar ul li svg {
+          margin-right: 20px; }
+        #header .navbar ul li .fa {
+          margin-right: 20px; }
+        #header .navbar ul li .nav-img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin-right: 15px; }
+
+#navbar {
+  display: none; }
+
+#news-feed {
+  margin-top: 40px;
+  position: relative;
+  top: 0;
+  left: 180px; }
+  #news-feed .stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1px 0.1rem; }
+    #news-feed .stories ul {
+      list-style: none;
+      margin-right: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      #news-feed .stories ul div {
+        background: linear-gradient(to left, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+        width: 64.5px;
+        height: 64.5px;
+        margin-left: 0 0.5rem;
+        border-radius: 50%; }
+        #news-feed .stories ul div img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-left: 0.1rem;
+          margin-top: 0.1rem; }
+  #news-feed .post-container {
+    margin: -10px 20px;
+    padding: 10px; }
+    #news-feed .post-container .post .post-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 9px;
+      margin: 0 150px;
+      margin-left: 140px;
+      margin-top: 40px; }
+      #news-feed .post-container .post .post-header div {
+        display: flex;
+        margin-right: 0.5rem; }
+        #news-feed .post-container .post .post-header div div {
+          background: linear-gradient(to left, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+          width: 36px;
+          height: 36px;
+          margin-left: 0 0.5rem;
+          border-radius: 50%; }
+          #news-feed .post-container .post .post-header div div img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 0.1rem;
+            margin-top: 0.1rem; }
+        #news-feed .post-container .post .post-header div h4 {
+          margin-right: 0.5rem;
+          margin-top: 0.2rem; }
+        #news-feed .post-container .post .post-header div p {
+          margin-top: 0.2rem; }
+    #news-feed .post-container .post .post-content {
+      margin: 0 150px; }
+      #news-feed .post-container .post .post-content img {
+        width: 450px;
+        height: 550px;
+        justify-content: center;
+        margin: 0;
+        align-items: center; }
+      #news-feed .post-container .post .post-content .icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        padding: 1px; }
+        #news-feed .post-container .post .post-content .icons div {
+          display: flex; }
+          #news-feed .post-container .post .post-content .icons div svg {
+            margin-right: 1rem; }
+      #news-feed .post-container .post .post-content .likes {
+        display: flex; }
+        #news-feed .post-container .post .post-content .likes .likes-img {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          margin-right: 0.5rem; }
+      #news-feed .post-container .post .post-content .write-up {
+        display: flex; }
+        #news-feed .post-container .post .post-content .write-up h4 {
+          margin-right: 0.5rem; }
+      #news-feed .post-container .post .post-content .comments div {
+        display: flex;
+        justify-content: space-between; }
+      #news-feed .post-container .post .post-content .comments form input {
+        width: 100%;
+        height: 20px;
+        border: none; }
+      #news-feed .post-container .post .post-content .border-bottom {
+        padding: 0 20px;
+        width: 460px;
+        height: 1px;
+        border: 1px solid #CCCCCC; }
+
+#log-out {
+  position: relative;
+  top: 0;
+  left: 100px;
+  margin: 5px; }
+  #log-out .log-container {
+    margin-top: 60px; }
+    #log-out .log-container .log {
+      display: flex;
+      justify-content: space-between; }
+      #log-out .log-container .log div {
+        display: flex; }
+        #log-out .log-container .log div img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 0.5rem; }
+        #log-out .log-container .log div li {
+          line-height: 1rem;
+          margin-top: 0.5rem; }
+      #log-out .log-container .log a {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-left: 0.4rem; }
+    #log-out .log-container .bio-home .suggest {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0; }
+      #log-out .log-container .bio-home .suggest h4 {
+        font-size: 1rem; }
+      #log-out .log-container .bio-home .suggest a {
+        font-size: 1rem;
+        margin-left: 65px;
+        color: #333; }
+    #log-out .log-container .bio-home .bio-grid {
+      margin-bottom: 0.5rem;
+      padding: 1px;
+      display: flex;
+      justify-content: space-between; }
+      #log-out .log-container .bio-home .bio-grid div {
+        display: flex;
+        padding: 1px; }
+        #log-out .log-container .bio-home .bio-grid div .suggest-img {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          margin-right: 0.5rem; }
+        #log-out .log-container .bio-home .bio-grid div li {
+          line-height: 1rem; }
+        #log-out .log-container .bio-home .bio-grid div a {
+          font-size: 1rem;
+          margin-top: 1rem; }
+  #log-out #footer {
+    padding: 1px;
+    margin: 1px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: #737373; }
+    #log-out #footer .list-items .ul-1 {
+      display: flex; }
+      #log-out #footer .list-items .ul-1 li {
+        margin-right: 1rem; }
+    #log-out #footer .list-items p {
+      margin-top: 1rem; }
+
+@media (max-width: 825px) {
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45%;
+    width: 70px;
+    margin: 0;
+    padding-right: 1px;
+    border-right: 1px solid #CCCCCC; }
+    #header .navbar {
+      margin: 0 1px;
+      padding: 0; }
+      #header .navbar h1 {
+        display: none; }
+      #header .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -20px;
+        margin-top: 40px; }
+        #header .navbar ul li {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 15px 0;
+          font-size: 1rem; }
+          #header .navbar ul li a {
+            display: none; }
+          #header .navbar ul li svg {
+            margin-left: 10px; }
+          #header .navbar ul li .fa {
+            margin-left: 15px; }
+          #header .navbar ul li .nav-img {
+            margin-left: 12px; }
+  #mobile {
+    display: none; }
+  #news-feed {
+    margin-top: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center; }
+    #news-feed .stories {
+      margin-left: 70px; }
+    #news-feed .post-container .post .post-header {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0;
+      margin-left: 50px;
+      margin-top: 10px; }
+    #news-feed .post-container .post .post-content {
+      margin-left: 50px; }
+      #news-feed .post-container .post .post-content img {
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+        align-items: center; }
+      #news-feed .post-container .post .post-content .icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 2rem;
+        margin-bottom: 0.5rem;
+        padding: 1px; }
+        #news-feed .post-container .post .post-content .icons div {
+          display: flex; }
+          #news-feed .post-container .post .post-content .icons div svg {
+            margin-right: 1rem; }
+      #news-feed .post-container .post .post-content .likes {
+        display: flex; }
+        #news-feed .post-container .post .post-content .likes .likes-img {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          margin-right: 0.5rem; }
+      #news-feed .post-container .post .post-content .write-up {
+        display: flex; }
+        #news-feed .post-container .post .post-content .write-up h4 {
+          margin-right: 0.5rem; }
+      #news-feed .post-container .post .post-content .comments div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+      #news-feed .post-container .post .post-content .comments form input {
+        width: 100%;
+        height: 20px;
+        border: none; }
+      #news-feed .post-container .post .post-content .border-bottom {
+        padding: 0 20px;
+        width: 70px;
+        height: 1px;
+        border: 1px solid #CCCCCC; }
+  #log-out {
+    display: none; } }
+
+@media (max-width: 500px) {
+  #header {
+    position: fixed;
+    top: 430px;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-right: none; }
+    #header .navbar {
+      margin: 5px; }
+      #header .navbar ul {
+        display: flex;
+        flex-direction: row;
+        background: #f4f4f4; }
+        #header .navbar ul li {
+          font-size: 2rem;
+          margin-right: 1rem; }
+          #header .navbar ul li .hide-search {
+            display: none;
+            font-size: 0.1rem;
+            position: fixed;
+            left: 180px;
+            top: 10px;
+            z-index: 1; }
+          #header .navbar ul li .hide-notify {
+            display: none;
+            font-size: 0.1rem;
+            position: fixed;
+            left: 180px;
+            top: 10px;
+            z-index: 1; }
+          #header .navbar ul li .explore {
+            position: relative;
+            z-index: 1; }
+          #header .navbar ul li svg {
+            position: relative;
+            left: -10px; }
+          #header .navbar ul li .nav-img {
+            position: relative;
+            left: 50px;
+            left: 10px;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            background: #f4f4f4; }
+          #header .navbar ul li .fa {
+            position: fixed;
+            display: none; }
+  #navabar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    z-index: 2;
+    padding: 5px 16px;
+    width: 100%;
+    display: inline-block;
+    background: #f4f4f4; }
+    #navabar nav ul {
+      display: flex;
+      margin-bottom: 1rem; }
+      #navabar nav ul .drop-toggle {
+        display: inline-block;
+        position: relative; }
+        #navabar nav ul .drop-toggle :hover {
+          cursor: pointer; }
+        #navabar nav ul .drop-toggle div {
+          display: flex;
+          margin-top: 0.3rem;
+          margin-right: 2rem; }
+          #navabar nav ul .drop-toggle div h1 {
+            font-family: 'Satisfy', cursive;
+            font-size: 1.7rem; }
+          #navabar nav ul .drop-toggle div .fas {
+            margin-top: 0.3rem; }
+        #navabar nav ul .drop-toggle ul :hover ul {
+          display: block;
+          position: absolute;
+          left: 0;
+          width: 50px;
+          padding-top: 1rem; }
+          #navabar nav ul .drop-toggle ul :hover ul a {
+            display: inline-block; }
+      #navabar nav ul form {
+        padding: 0 16px; }
+        #navabar nav ul form [type="search"] {
+          background: #eee;
+          width: 95%;
+          padding: 0.6rem 6rem;
+          border-radius: 0.5rem;
+          border: none; }
+    #navabar .border-bottom {
+      width: 100%;
+      height: 1px;
+      border: 1px solid #CCCCCC; }
+  #news-feed {
+    position: relative;
+    z-index: 0;
+    top: 90px;
+    left: -90px;
+    margin: 5px 10px;
+    padding: 0 20px; }
+    #news-feed .stories {
+      margin-left: 50px; }
+      #news-feed .stories ul {
+        margin-right: 0.8rem; }
+    #news-feed .post-container {
+      margin: 0 60px; }
+      #news-feed .post-container .post .post-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+        padding: 0;
+        margin: 0;
+        margin-left: 0; }
+      #news-feed .post-container .post .post-content {
+        margin: 0; }
+        #news-feed .post-container .post .post-content img {
+          width: 60%;
+          height: 100%; }
+        #news-feed .post-container .post .post-content .icons {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 6rem; }
+        #news-feed .post-container .post .post-content .comments div {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 5rem; } }
